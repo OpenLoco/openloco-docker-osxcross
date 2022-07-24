@@ -26,6 +26,7 @@ COPY ${CLIB_TOOLS} /home/
 
 RUN apt-get update && apt-get install -y \
 	cmake \
+	ninja-build \
 	cpio \
 	&& rm -rf /var/lib/apt/lists/*
 
